@@ -1,0 +1,90 @@
+/* Explore Menu Container */
+.explore-menu {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.explore-menu h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.explore-menu-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Menu List Flexbox */
+.explore-menu-list {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    gap: 1rem; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Individual Menu Item */
+.explore-menu-item {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: auto; /* Remove fixed width */
+    max-height: auto; /* Remove fixed height */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 0; /* Remove border-radius */
+}
+
+/* Image Styles */
+.explore-menu-item img {
+    width: auto; /* Let the image size adjust based on content */
+    height: auto; /* Let the image size adjust based on content */
+    object-fit: cover;
+}
+
+/* Active Image Border */
+.explore-menu-item.active img {
+    border: 3px solid #333; /* Example border style */
+    padding: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .explore-menu h2 {
+        font-size: 2rem;
+    }
+
+    .explore-menu-text {
+        font-size: 1rem;
+    }
+
+    .explore-menu-list {
+        gap: 0.5rem; /* Reduced gap for smaller screens */
+    }
+
+    .explore-menu-item img {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .explore-menu-item p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+   
+    .explore-menu-list {
+      gap: 10px;
+    }
+  
+    .explore-menu-item img {
+      height: auto;
+    }
+  
+    .explore-menu-item p {
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.Header {
+    background: url('/header_img.png');
+    background-size: cover;
+    height: 90vh;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    padding: 0 5%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: white;
+    margin: 20px auto;
+    margin-bottom: 0px;
+}
+
+.Header hr {
+    border: 3px solid grey;
+}
+
+.header-contents {
+    margin-top: 60px;
+    max-width: 800px;
+    text-align: left;
+    z-index: 2;
+    color: white;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-top: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.tagline {
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-weight: bolder;
+
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Header {
+        height: 70vh;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Header {
+        height: 60vh;
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Header {
+        height: 50vh;
+        padding: 0 2%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+button #view-menu{
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #b82525;
+    color: #1b1a1a;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgb(79, 77, 77);
+    font-weight: bold;
+}
+button #view-menu:hover{
+    background-color: #e5533c;
+  color: white;
+}

@@ -1,0 +1,200 @@
+/* Cart Container */
+.cart {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cart Items Container */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Cart Items Title */
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Individual Cart Item */
+.cart-items-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Item Image */
+.cart-items-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Item Details */
+.cart-items-item p {
+  margin: 0;
+}
+
+/* Remove Button */
+.cart-items-item button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-items-item button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Cart Bottom Section */
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+.cart-total {
+  width: 50%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-bottom: 7px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+}
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f04f23;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: red;
+}
+
+.promo-code-section {
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.promo-code-section p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.promo-code-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-code-input input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.promo-code-input button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.promo-code-input button:hover {
+  background-color: tomato;
+}
+
+/* Responsive Styling */
+
+/* Tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+  .cart-items-title,
+  .cart-items-item {
+      grid-template-columns: 1fr 2fr 1fr 1fr; /* Adjust columns for smaller screens */
+  }
+
+  .cart-bottom {
+      flex-direction: column; /* Stack cart totals and promo code section vertically */
+  }
+
+  .cart-total,
+  .promo-code-section {
+      width: 100%; /* Make both sections take full width */
+  }
+
+  .promo-code-input input {
+      width: 100%; /* Full width for the promo code input */
+  }
+}
+
+/* Mobile Phones (screen width 480px and below) */
+@media (max-width: 480px) {
+  /* Stack the cart item details vertically */
+  .cart-items-title,
+  .cart-items-item {
+      grid-template-columns: 1fr 1fr; /* Stack all items vertically for mobile */
+  }
+
+  .cart-items-item img {
+      width: 50px;
+      height: 50px; /* Smaller images on mobile */
+  }
+
+  /* Full width inputs and buttons for a better mobile experience */
+  .promo-code-input input,
+  .promo-code-input button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .checkout-btn {
+      width: 100%;
+  }
+}

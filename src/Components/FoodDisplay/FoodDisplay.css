@@ -1,0 +1,30 @@
+/* FoodDisplay.css */
+
+.food_display {
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .food-display-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* This will distribute items evenly */
+  }
+  
+  /* Food Display Responsive Styles */
+@media (max-width: 768px) {
+  .food-display-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+#heading{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 4%;
+  color: #333;
+}

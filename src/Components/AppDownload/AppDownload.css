@@ -1,0 +1,52 @@
+.app-download {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.app-download p {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* This section ensures the buttons are side by side */
+.app-download.platforms {
+    display: flex;
+    flex-direction: row; /* Ensures the images are in a row */
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Space between the buttons */
+}
+
+.app-download.platforms img {
+    width: 140px; /* Larger button size */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-download.platforms img:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+@media (max-width: 768px) {
+    .app-download {
+        padding: 20px;
+    }
+
+    .app-download p {
+        font-size: 18px;
+    }
+
+    /* Adjust image size for smaller screens */
+    .app-download.platforms img {
+        width: 120px;
+    }
+}

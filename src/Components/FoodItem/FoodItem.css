@@ -1,0 +1,128 @@
+
+.food-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.food-item:hover {
+  transform: scale(1.02);
+}
+
+.food-item-img-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-item-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.add-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.add-icon:hover {
+  opacity: 0.8;
+}
+
+.food-item-counter {
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.food-item-counter img {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin: 0 5px; /* Space between icons */
+}
+
+.item-count {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.food-item-details {
+  padding: 10px;
+}
+
+.food-item-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.food-item-rating h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.food-item-desc {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.food-item-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.food-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between cards */
+  margin: 10px;
+}
+
+.food-item {
+  flex: 1 1 calc(20% - 10px); /* Ensures each card takes up approximately 20% of the container's width minus the gap */
+  box-sizing: border-box;
+}
+
+/* Food Item Responsive Styles */
+@media (max-width: 768px) {
+  .food-items-container {
+    flex-direction: column;
+  }
+
+  .food-item {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .food-item-details h3 {
+    font-size: 18px;
+  }
+
+  .food-item-price {
+    font-size: 14px;
+  }
+
+  .food-item-rating h3 {
+    font-size: 16px;
+  }
+}
+
+.price{
+  color: red;
+}
